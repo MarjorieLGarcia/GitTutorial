@@ -1,0 +1,48 @@
+DevMarket Tutorial 
+
+#Global config
+#List all config settings
+$git config -l
+
+#Config your global settings
+$git config --global user.name "First and Last Name"
+$git config --global user.email username@gmail.com
+
+#Go to Desktop
+$cd Desktop
+
+#Create a directory
+$mkdir Gitting_Started
+
+#Initialized git
+$git init
+
+#Check the status on git
+$git status
+
+#Create a file inside directory
+$touch readme.md file.txt
+
+#Open the file and edit through command line
+$vi <file>
+--To edit -->ESC  i
+--Saved and exit -->ESC : wq
+
+#Add project changed
+$git add <file>
+or
+$git add .  -->Add everithing
+or
+$git add --all -->Add everything
+
+#Commit changes into the repo
+$git commit -m "Messages"
+
+#Print history of commits
+$git log
+
+$To ignore file(s) on the commit step
+$touch .gitignore
+$vi .gitignore
+--/*saved inside all the files do you want ignore*/
+
