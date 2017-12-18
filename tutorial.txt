@@ -84,4 +84,7 @@ $git checkout <other branch name>  //Switch between branches
 $git branch  //Will list all branches in your project
 
 #Merge from one branch to other
-$git merge <branch name>  //Where changes came from. This merge will be into the current branch 
+$git merge <branch name>  //Where changes came from. 
+
+#Push a local branch into the remote repo
+$git push --set-upstream <remote name> <branch name>
