@@ -54,6 +54,7 @@ $vi .gitignore
 #Push an exiting repository from command line
 $git remote add <name> <url>
 $git push -u <name> <branch name>  // -u mean make it as a default
+$git remote  //Will list all your remote repos
 
 #Adding ssh key in local machine
 $ssh-keygen -t rsa -b 4096 -C "<github emial>"
@@ -78,5 +79,9 @@ $git rm --cached <file name>
 #Create a new branch
 $git branch <branch name>
 
-#Switch between branch
-$git checkout <other branch name>
+#Switch and list branches
+$git checkout <other branch name>  //Switch between branches
+$git branch  //Will list all branches in your project
+
+#Merge from one branch to other
+$git merge <branch name>  //Where changes came from. This merge will be into the current branch 
