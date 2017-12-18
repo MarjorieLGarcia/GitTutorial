@@ -74,3 +74,9 @@ $ssh-add ~/.ssh/id_rsa  //Now we are adding to the ssh agent
 
 #Rollback a file from the commit stage
 $git rm --cached <file name>  
+
+#Create a new branch
+$git branch <branch name>
+
+#Switch between branch
+$git checkout <other branch name>
