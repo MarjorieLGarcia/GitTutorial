@@ -1,6 +1,9 @@
 DevMarket Tutorial 
 https://www.youtube.com/watch?v=WS8whF0ZK-o&list=PLwAKR305CRO-fenwcN2-IC0rgaB6vaJgD
 
+Traversy Media : Git & GitHub Course for Beginners
+https://www.youtube.com/watch?v=SWYqp7iY_Tc
+
 #Global config
 #List all config settings
 $git config -l
@@ -67,4 +70,7 @@ $ssh-add ~/.ssh/id_rsa  //Now we are adding to the ssh agent
 #Add the ssh key into github
 //Open your id_rsa.pub file with any text editor. Copy all the content.
 //On your github account, go to Settings -> SSH and GPG keys
-//Click new SSH key button, type a title and paste your ssh key content and add SSH key.   
+//Click new SSH key button, type a title and paste your ssh key content and add SSH key. 
+
+#Rollback a file from the commit stage
+$git rm --cached <file name>  
