@@ -50,4 +50,21 @@ $vi .gitignore
 
 #Push an exiting repository from command line
 $git remote add <name> <url>
-$git push -u <name> <branch name>  --> -u mean make it as a default 
+$git push -u <name> <branch name>  --> -u mean make it as a default
+
+#Adding ssh key in local machine
+$ssh-keygen -t rsa -b 4096 -C "<github emial>"
+-t --> Type. In this case rsa <optional>
+-b --> Bytes. In this example 4096 <optional>
+-C --> User email. Use the email address same as github user <optional>
+--Accept the default location to save the key
+--Choose a phrase as a passphrase, it's optional but recommended
+
+#Adding the ssh key to the ssh agent
+$eval "$(ssh-agent -s)"  --> This will show us the pid agent number. Just for confirmation purpose.
+$ssh-add ~/.ssh/id_rsa -->Now we are adding to the ssh agent 
+
+#Add the ssh key into github
+--Open your id_rsa.pub file with any text editor. Copy all the content.
+--On your github account, go to Settings -> SSH and GPG keys
+--Click new SSH key button, type a title and paste your ssh key content and add SSH key.   
