@@ -87,4 +87,4 @@ $git branch  //Will list all branches in your project
 $git merge <branch name>  //Where changes came from. 
 
 #Push a local branch into the remote repo
-$git push --set-upstream <remote name> <branch name>
+$git push --set-upstream <remote name> <branch name>  //this line will be require just the first time
