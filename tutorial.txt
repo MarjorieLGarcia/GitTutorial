@@ -48,3 +48,6 @@ $vi .gitignore
 --/*saved inside all the files do you want ignore*/
 --Github Reference --> https://github.vom/github/gitignore
 
+#Push an exiting repository from command line
+$git remote add <name> <url>
+$git push -u <name> <branch name>  --> -u mean make it as a default 
