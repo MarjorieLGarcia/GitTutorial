@@ -21,7 +21,7 @@ $mkdir Gitting_Started
 #Initialized git
 $git init
 
-#Check the status on git
+#Check the status of git
 $git status
 
 #Create a file inside directory
@@ -35,11 +35,11 @@ $vi <file>
 #Add project changed
 $git add <file>
 or
-$git add .  //Add everithing
+$git add .  //Add everything
 or
 $git add --all //Add everything
 
-#Commit changes into the repo
+#Commit changes to the repo
 $git commit -m "Messages"
 
 #Print history of commits
@@ -48,7 +48,7 @@ $git log
 $To ignore file(s) on the commit step
 $touch .gitignore
 $vi .gitignore
-/*saved inside all the files do you want ignore*/
+//saved inside all the files you want to ignore
 //Github Reference --> https://github.vom/github/gitignore
 
 #Push an exiting repository from command line
@@ -60,7 +60,7 @@ $git remote  //Will list all your remote repos
 $ssh-keygen -t rsa -b 4096 -C "<github emial>"
 //-t --> Type. In this case rsa <optional>
 //-b --> Bytes. In this example 4096 <optional>
-//-C --> User email. Use the email address same as github user <optional>
+//-C --> User email. Use the same email address as github user <optional>
 //Accept the default location to save the key
 //Choose a phrase as a passphrase, it's optional but recommended
 
