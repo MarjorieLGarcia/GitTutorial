@@ -128,7 +128,7 @@ $git branch -u origin/<branch name> //this will track the remote branch on the c
 $git branch --unset-upstream //this will untrack the remote branch from the current branch
 
 #List all branches that share the same commit 
-$git branch --contains <commit number> 
+$git branch --contains <commit number > 
 
 #Assign to a branch a specific commit 
 //Before to execute the command, you need to be on the target branch which you want to reset the commit
@@ -143,7 +143,18 @@ $git merge <branch name>  //Where changes came from.
 $git branch --no-merge //will display all branch that are not merge into th current branch
 $git branch --merge //will display all branch that are merge into the current branch 
 
+#Merge using algorithm 3 ways 
+$git merge -s recursive -X ignore-all-space <branch name>
+//-s --> specify the algorithm, in this case recursive
+//-X --> specify the option to apply, in this case ignore-all-space 
+
+#Abort Merging
+$git merge --abort
+
 #Push a local branch into the remote repo
 $git push --set-upstream <remote name> <branch name>  //this line will be require just the first time
+
+#Git Gui
+$gitk --all //will pop up a gui interface from git 
 
 
