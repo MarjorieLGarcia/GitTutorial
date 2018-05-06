@@ -122,10 +122,10 @@ $git checkout -b <branch name> //this will create a new branch, and switch autom
 $git branch -D <branch name> //this will delete the specific branch 
 $git branch -m "new branch name" //this will rename the current branch, so first you should be on the branch which you you one to rename
 
-#To track/untrack a remote branch 
+#To track/untracked a remote branch 
 //First create a local branch, preferentially with the same name as the remote branch
 $git branch -u origin/<branch name> //this will track the remote branch on the current branch
-$git branch --unset-upstream //this will untrack the remote branch from the current branch
+$git branch --unset-upstream //this will untracked the remote branch from the current branch
 
 #List all branches that share the same commit 
 $git branch --contains <commit number > 
@@ -151,6 +151,23 @@ $git merge -s recursive -X ignore-all-space <branch name>
 #Abort Merging
 $git merge --abort
 
+#Rebase
+//save the commits from the current branch on top of the master branch
+$git rebase
+$git rebase --continue //complete the rebase command 
+$git rebase --amend //apply changes on commit 
+$git rebase -i <commit number> //prompt a vi editor to execute different option, the commit number should be the parent commit (previous commit)
+// -i --> stands for interactive
+
+#Creating Tags
+//Tags are really helpful in order to mark milestone on your project, like release versions 
+$git tag "<tag name>" //by convention the tag name should be v1.0, specifying the version number. This is lightweight tag 
+$git tag  "<tag name>" -m "Release note: ......" //this know as a annotated tag, which contains more information
+$git tag // this will display the list of tags
+$git tag -d "tag name" //this will delete the specify tag  
+$git fetch --tags // to pull from remote including the tags
+$git push --tags // to push to remote including the tags 
+
 #Push a local branch into the remote repo
 $git push --set-upstream <remote name> <branch name>  //this line will be require just the first time
 
@@ -161,6 +178,8 @@ $gitk --all //will pop up a gui interface from git
 $git diff HEAD~ //this will display a diff screen with all the current difference on a specific file
 or 
 $git diff HEAD~1 HEAD 
+or
+$git diff HEAD~1 HEAD <specific file name> //this will display only the different for the specify file 
 $git config --global merge.conflictstyle diff3 //global configuration for diff3 merge tool
 
 
