@@ -130,6 +130,8 @@ $git branch  //Will list all branches in your project
 
 #Merge from one branch to other
 $git merge <branch name>  //Where changes came from. 
+$git branch --no-merge //will display all branch that are not merge into th current branch
+$git branch --merge //will display all branch that are merge into the current branch 
 
 #Push a local branch into the remote repo
 $git push --set-upstream <remote name> <branch name>  //this line will be require just the first time
