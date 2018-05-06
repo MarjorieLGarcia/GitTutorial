@@ -116,9 +116,11 @@ $ssh-add ~/.ssh/id_rsa  //Now we are adding to the ssh agent
 #Rollback a file from the commit stage
 $git rm --cached <file name>  
 
-#Create a new branch
+#Create/Delete/Rename a branch
 $git branch <branch name> //this will create a new branch, but you will still on the current branch
 $git checkout -b <branch name> //this will create a new branch, and switch automatically to that branch 
+$git branch -D <branch name> //this will delete the specific branch 
+$git branch -m "new branch name" //this will rename the current branch, so first you should be on the branch which you you one to rename 
 
 #Assign to a branch a specific commit 
 //Before to execute the command, you need to be on the target branch which you want to reset the commit
