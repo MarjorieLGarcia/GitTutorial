@@ -157,4 +157,7 @@ $git push --set-upstream <remote name> <branch name>  //this line will be requir
 #Git Gui
 $gitk --all //will pop up a gui interface from git 
 
+#Git diff
+$git diff HEAD~ //this will display a diff screen with all the current difference on a specific file
+
 
