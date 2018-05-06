@@ -159,5 +159,8 @@ $gitk --all //will pop up a gui interface from git
 
 #Git diff
 $git diff HEAD~ //this will display a diff screen with all the current difference on a specific file
+or 
+$git diff HEAD~1 HEAD 
+$git config --global merge.conflictstyle diff3 //global configuration for diff3 merge tool
 
 
