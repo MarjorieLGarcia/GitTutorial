@@ -188,4 +188,10 @@ $git config --global merge.conflictstyle diff3 //global configuration for diff3 
 $git submodule add <remote url repo> //clone the subrepo into the main local repo. Before execute this command you have to be in the main repo file  
 $git submodule update //after a pull from remote repo if there is some changes on the submodule, this command will update those changes 
 
+#Working with subtree repos 
+$git remote add <remote repo name> <remote url> //creating a remote connection with the repo that will be attached as a subtree folder into the main repo
+$git subtree add --prefix <name for this subtree> <remote repo name> <branch name desire to clone> --squash //create the subtree file
+//--squash -->compile all previous commits into one 
+
+
 
