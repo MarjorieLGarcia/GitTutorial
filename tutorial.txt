@@ -182,4 +182,10 @@ or
 $git diff HEAD~1 HEAD <specific file name> //this will display only the different for the specify file 
 $git config --global merge.conflictstyle diff3 //global configuration for diff3 merge tool
 
+#Work/Update Submodule Repo
+//The submodule repo is no more that other repo that contains libraries, from a central project store in a main repo
+//Is useful work with this approacher to avoid massive complication at the time to management the central or main repo
+$git submodule add <remote url repo> //clone the subrepo into the main local repo. Before execute this command you have to be in the main repo file  
+$git submodule update //after a pull from remote repo if there is some changes on the submodule, this command will update those changes 
+
 
